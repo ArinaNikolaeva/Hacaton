@@ -1,0 +1,13 @@
+[general]
+name=Irkutsk Transport Analyzer (Hackathon)
+qgisMinimumVersion=3.28
+description=Специальная версия для хакатона. Анализ транспортной доступности Иркутска.
+version=2025.12.hackathon  
+author=ИРНИТУ_Команда_Хакатон 
+email=-
+plugin_id=irkutsk_hackathon_2025_unique_12345  
+
+tags=irkutsk,hackathon,transport,analysis
+category=Analysis
+experimental=True
+deprecated=False
