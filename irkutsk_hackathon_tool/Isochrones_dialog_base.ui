@@ -44,11 +44,7 @@
                </widget>
               </item>
               <item row="0" column="1">
-               <widget class="QgsMapLayerComboBox" name="stopLayerCombo">
-                <property name="toolTip">
-                 <string>Единый слой остановок с полем идентификаторов</string>
-                </property>
-               </widget>
+               <widget class="QgsMapLayerComboBox" name="stopLayerCombo"/>
               </item>
               <item row="1" column="0">
                <widget class="QLabel" name="labelStopField">
@@ -58,11 +54,7 @@
                </widget>
               </item>
               <item row="1" column="1">
-               <widget class="QComboBox" name="stopFieldCombo">
-                <property name="toolTip">
-                 <string>Поле с уникальными идентификаторами остановок</string>
-                </property>
-               </widget>
+               <widget class="QComboBox" name="stopFieldCombo"/>
               </item>
               <item row="2" column="0">
                <widget class="QLabel" name="labelOutboundIds">
@@ -73,12 +65,6 @@
               </item>
               <item row="2" column="1">
                <widget class="QPlainTextEdit" name="outboundIdsEdit">
-                <property name="toolTip">
-                 <string>Список ID остановок для выезда (по одному в строке, через запятую или пробел)</string>
-                </property>
-                <property name="placeholderText">
-                 <string>ID1, ID2, ID3…</string>
-                </property>
                 <property name="maximumHeight">
                  <number>60</number>
                 </property>
@@ -93,12 +79,6 @@
               </item>
               <item row="3" column="1">
                <widget class="QPlainTextEdit" name="returnIdsEdit">
-                <property name="toolTip">
-                 <string>Список ID остановок для возвращения (по одному в строке, через запятую или пробел)</string>
-                </property>
-                <property name="placeholderText">
-                 <string>ID1, ID2, ID3…</string>
-                </property>
                 <property name="maximumHeight">
                  <number>60</number>
                 </property>
@@ -112,11 +92,7 @@
                </widget>
               </item>
               <item row="4" column="1">
-               <widget class="QgsMapLayerComboBox" name="networkCombo">
-                <property name="toolTip">
-                 <string>Линейный слой улично-дорожной сети</string>
-                </property>
-               </widget>
+               <widget class="QgsMapLayerComboBox" name="networkCombo"/>
               </item>
               <item row="5" column="0">
                <widget class="QLabel" name="labelHeight">
@@ -126,11 +102,7 @@
                </widget>
               </item>
               <item row="5" column="1">
-               <widget class="QgsMapLayerComboBox" name="heightCombo">
-                <property name="toolTip">
-                 <string>Слой с высотами для штрафов (можно оставить пустым)</string>
-                </property>
-               </widget>
+               <widget class="QgsMapLayerComboBox" name="heightCombo"/>
               </item>
               <item row="6" column="0">
                <widget class="QLabel" name="labelPopulation">
@@ -140,11 +112,7 @@
                </widget>
               </item>
               <item row="6" column="1">
-               <widget class="QgsMapLayerComboBox" name="populationCombo">
-                <property name="toolTip">
-                 <string>Точечный слой зданий с численностью жителей</string>
-                </property>
-               </widget>
+               <widget class="QgsMapLayerComboBox" name="populationCombo"/>
               </item>
               <item row="7" column="0">
                <widget class="QLabel" name="labelPopulationField">
@@ -154,11 +122,7 @@
                </widget>
               </item>
               <item row="7" column="1">
-               <widget class="QComboBox" name="populationFieldCombo">
-                <property name="toolTip">
-                 <string>Поле атрибутов со значением населения</string>
-                </property>
-               </widget>
+               <widget class="QComboBox" name="populationFieldCombo"/>
               </item>
              </layout>
             </widget>
@@ -275,9 +239,6 @@
                 <property name="text">
                  <string>Интерполяция штрафа</string>
                 </property>
-                <property name="toolTip">
-                 <string>Включить плавное уменьшение доступности при перепадах высот</string>
-                </property>
                </widget>
               </item>
               <item row="6" column="0">
@@ -328,7 +289,7 @@
      </widget>
      <widget class="QWidget" name="tabTask2">
       <attribute name="title">
-       <string>Задача 2: Интервалы (множество зон)</string>
+       <string>Задача 2: Интервалы и Кратчайший путь</string>
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_5">
        <item>
@@ -352,11 +313,7 @@
                </widget>
               </item>
               <item row="0" column="1">
-               <widget class="QgsMapLayerComboBox" name="startPointLayerCombo">
-                <property name="toolTip">
-                 <string>Слой с точками начала изохрон</string>
-                </property>
-               </widget>
+               <widget class="QgsMapLayerComboBox" name="startPointLayerCombo"/>
               </item>
               <item row="1" column="0">
                <widget class="QLabel" name="labelStartPointField">
@@ -366,11 +323,7 @@
                </widget>
               </item>
               <item row="1" column="1">
-               <widget class="QComboBox" name="startPointFieldCombo">
-                <property name="toolTip">
-                 <string>Поле с идентификаторами точек</string>
-                </property>
-               </widget>
+               <widget class="QComboBox" name="startPointFieldCombo"/>
               </item>
               <item row="2" column="0">
                <widget class="QLabel" name="labelStartPointId">
@@ -380,70 +333,75 @@
                </widget>
               </item>
               <item row="2" column="1">
-               <widget class="QLineEdit" name="startPointIdEdit">
-                <property name="toolTip">
-                 <string>ID точки для построения изохрон</string>
-                </property>
-                <property name="placeholderText">
-                 <string>ID1</string>
+               <widget class="QLineEdit" name="startPointIdEdit"/>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="labelShortestPath">
+                <property name="text">
+                 <string>Кратчайший путь</string>
                 </property>
                </widget>
               </item>
-              <item row="3" column="0">
+              <item row="3" column="1">
+               <widget class="QCheckBox" name="shortestPathCheck">
+                <property name="text">
+                 <string>Построить кратчайший путь</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="labelEndPoint">
+                <property name="text">
+                 <string>Конечная точка</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QLineEdit" name="endPointIdEdit">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="0">
                <widget class="QLabel" name="labelGraphTask2">
                 <property name="text">
                  <string>Граф УДС</string>
                 </property>
                </widget>
               </item>
-              <item row="3" column="1">
-               <widget class="QgsMapLayerComboBox" name="networkComboTask2">
-                <property name="toolTip">
-                 <string>Линейный слой улично-дорожной сети</string>
-                </property>
-               </widget>
+              <item row="5" column="1">
+               <widget class="QgsMapLayerComboBox" name="networkComboTask2"/>
               </item>
-              <item row="4" column="0">
+              <item row="6" column="0">
                <widget class="QLabel" name="labelHeightTask2">
                 <property name="text">
                  <string>Изолинии / DEM</string>
                 </property>
                </widget>
               </item>
-              <item row="4" column="1">
-               <widget class="QgsMapLayerComboBox" name="heightComboTask2">
-                <property name="toolTip">
-                 <string>Слой с высотами для штрафов (можно оставить пустым)</string>
-                </property>
-               </widget>
+              <item row="6" column="1">
+               <widget class="QgsMapLayerComboBox" name="heightComboTask2"/>
               </item>
-              <item row="5" column="0">
+              <item row="7" column="0">
                <widget class="QLabel" name="labelPopulationTask2">
                 <property name="text">
                  <string>Население (точки)</string>
                 </property>
                </widget>
               </item>
-              <item row="5" column="1">
-               <widget class="QgsMapLayerComboBox" name="populationComboTask2">
-                <property name="toolTip">
-                 <string>Точечный слой зданий с численностью жителей</string>
-                </property>
-               </widget>
+              <item row="7" column="1">
+               <widget class="QgsMapLayerComboBox" name="populationComboTask2"/>
               </item>
-              <item row="6" column="0">
+              <item row="8" column="0">
                <widget class="QLabel" name="labelPopulationFieldTask2">
                 <property name="text">
                  <string>Поле населения</string>
                 </property>
                </widget>
               </item>
-              <item row="6" column="1">
-               <widget class="QComboBox" name="populationFieldComboTask2">
-                <property name="toolTip">
-                 <string>Поле атрибутов со значением населения</string>
-                </property>
-               </widget>
+              <item row="8" column="1">
+               <widget class="QComboBox" name="populationFieldComboTask2"/>
               </item>
              </layout>
             </widget>
@@ -510,9 +468,6 @@
                 <property name="text">
                  <string>Использовать скорости из графа УДС</string>
                 </property>
-                <property name="checked">
-                 <bool>false</bool>
-                </property>
                </widget>
               </item>
               <item row="3" column="0">
@@ -523,11 +478,7 @@
                </widget>
               </item>
               <item row="3" column="1">
-               <widget class="QComboBox" name="udsSpeedFieldCombo">
-                <property name="toolTip">
-                 <string>Поле с данными о скорости движения</string>
-                </property>
-               </widget>
+               <widget class="QComboBox" name="udsSpeedFieldCombo"/>
               </item>
               <item row="4" column="0" colspan="2">
                <widget class="QGroupBox" name="timeIntervalsGroup">
@@ -603,13 +554,37 @@
                </widget>
               </item>
               <item row="5" column="0">
+               <widget class="QLabel" name="labelPathType">
+                <property name="text">
+                 <string>Критерий пути</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="1">
+               <widget class="QComboBox" name="pathTypeCombo">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Минимальное время</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Минимальное расстояние</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="6" column="0">
                <widget class="QLabel" name="labelHeightStepTask2">
                 <property name="text">
                  <string>Шаг высоты (м)</string>
                 </property>
                </widget>
               </item>
-              <item row="5" column="1">
+              <item row="6" column="1">
                <widget class="QDoubleSpinBox" name="heightStepSpinTask2">
                 <property name="minimum">
                  <double>1.000000000000000</double>
@@ -622,14 +597,14 @@
                 </property>
                </widget>
               </item>
-              <item row="6" column="0">
+              <item row="7" column="0">
                <widget class="QLabel" name="labelHeightPenaltyTask2">
                 <property name="text">
                  <string>Штраф за шаг (м)</string>
                 </property>
                </widget>
               </item>
-              <item row="6" column="1">
+              <item row="7" column="1">
                <widget class="QDoubleSpinBox" name="heightPenaltySpinTask2">
                 <property name="minimum">
                  <double>1.000000000000000</double>
@@ -642,17 +617,14 @@
                 </property>
                </widget>
               </item>
-              <item row="7" column="1">
+              <item row="8" column="1">
                <widget class="QCheckBox" name="continuousPenaltyCheckTask2">
                 <property name="text">
                  <string>Интерполяция штрафа</string>
                 </property>
-                <property name="toolTip">
-                 <string>Включить плавное уменьшение доступности при перепадах высот</string>
-                </property>
                </widget>
               </item>
-              <item row="8" column="0" colspan="2">
+              <item row="9" column="0" colspan="2">
                <widget class="QCheckBox" name="addLayersCheckTask2">
                 <property name="text">
                  <string>Добавить зоны в проект</string>
@@ -705,6 +677,24 @@
    <signal>rejected()</signal>
    <receiver>IsochronesDialogBase</receiver>
    <slot>reject()</slot>
+  </connection>
+  <connection>
+   <sender>shortestPathCheck</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>endPointIdEdit</receiver>
+   <slot>setEnabled(bool)</slot>
+  </connection>
+  <connection>
+   <sender>shortestPathCheck</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>pathTypeCombo</receiver>
+   <slot>setEnabled(bool)</slot>
+  </connection>
+  <connection>
+   <sender>shortestPathCheck</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>timeIntervalsGroup</receiver>
+   <slot>setDisabled(bool)</slot>
   </connection>
  </connections>
 </ui>
